@@ -1,0 +1,13 @@
+{
+	"id": 1,
+	"measurementType": "BODY_WEIGTH",
+	"timeStamp": 1549877500611,
+	"unit": "kg",
+	"userEmail": "nekdo@nekaj.si",
+	"value": 95.5,
+	"label": "Telesna teža",
+	"comment": "Jutranja meritev",
+	"geo": "15.43, 43.432"
+}
+
+
