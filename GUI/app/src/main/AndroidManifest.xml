@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="si.um.feri.primerizimskasola2020">
+    <!-- Required to act as a custom watch face. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required for complications to receive complication data and open the provider chooser. -->
+    <uses-permission android:name="com.google.android.wearable.permission.RECEIVE_COMPLICATION_DATA" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".customDialog.CustomDialog">
+        </activity>
+        <activity android:name=".horizontalVerticalLayout.Layouts" />
+        <activity android:name=".notification.FromNotificationActivity" />
+        <activity android:name=".notification.NotificationActivity" />
+        <activity android:name=".communicationFragmentActivity.CommunicationActivity" />
+        <activity android:name=".fragments.FragmentActivity" />
+        <activity android:name=".viewPager2.TabViewPagerActivity" />
+        <activity android:name=".gestures.GesturesActivity" />
+        <activity
+            android:name=".menu.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".dialog.DialogActivity" />
+        <activity android:name=".recyclerView.RecyclerViewActivity" />
+        <activity android:name=".motionLayout.MotionLayout" />
+        <activity android:name=".linearLayout.PrimerSimpleLinearLayout" />
+        <activity android:name=".constraintLayout.ConstraintLayoutActivity" />
+        <activity android:name=".Launcher" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

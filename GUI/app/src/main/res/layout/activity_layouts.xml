@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".horizontalVerticalLayout.Layouts">
+
+    <TextView
+        android:id="@+id/imeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/imeLabel"
+        app:layout_constraintBottom_toTopOf="@+id/imeInput"
+        app:layout_constraintStart_toStartOf="@+id/imeInput"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/imeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/imeInput"
+        app:layout_constraintBottom_toTopOf="@+id/priimekLabel"
+        app:layout_constraintStart_toStartOf="@+id/priimekLabel"
+        app:layout_constraintTop_toBottomOf="@+id/imeLabel" />
+
+    <TextView
+        android:id="@+id/priimekLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/priimekLabel"
+        app:layout_constraintBottom_toTopOf="@+id/priimekInput"
+        app:layout_constraintStart_toStartOf="@+id/priimekInput"
+        app:layout_constraintTop_toBottomOf="@+id/imeInput" />
+
+    <EditText
+        android:id="@+id/priimekInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/priimekInput"
+        app:layout_constraintBottom_toTopOf="@+id/tezaLabel"
+        app:layout_constraintStart_toStartOf="@+id/tezaLabel"
+        app:layout_constraintTop_toBottomOf="@+id/priimekLabel" />
+
+    <TextView
+        android:id="@+id/tezaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tezaLabel"
+        app:layout_constraintBottom_toTopOf="@+id/tezaInput"
+        app:layout_constraintStart_toStartOf="@+id/tezaInput"
+        app:layout_constraintTop_toBottomOf="@+id/priimekInput" />
+
+    <EditText
+        android:id="@+id/tezaInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/tezaInput"
+        app:layout_constraintBottom_toTopOf="@+id/visinaLabel"
+        app:layout_constraintStart_toStartOf="@+id/visinaLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tezaLabel" />
+
+    <TextView
+        android:id="@+id/visinaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/visinaLabel"
+        app:layout_constraintBottom_toTopOf="@+id/visinaInput"
+        app:layout_constraintStart_toStartOf="@+id/visinaInput"
+        app:layout_constraintTop_toBottomOf="@+id/tezaInput" />
+
+    <EditText
+        android:id="@+id/visinaInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/visinaInput"
+        app:layout_constraintBottom_toTopOf="@+id/dodaj"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visinaLabel" />
+
+    <Button
+        android:id="@+id/dodaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="@string/gumbDodaj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
